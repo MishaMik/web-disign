@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое веб-дизайн портфолио</title>
+    <style> body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    
+    header, section, article, footer {
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    h1, h2 {
+        color: #07619c;
+    }
+    
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .card article {
+        flex-basis: calc(33.33% - 10px);
+        margin-bottom: 10px;
+    }
+    
+    footer {
+        text-align: center;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        /* Применение стилей для мобильных устройств */
+        body {
+            margin: 10px;
+        }
+    
+        h1, h2 {
+            color: #333;
+        }
+    
+        .card article {
+            flex-basis: calc(50% - 10px);
+        }
+    }
+    
+    @media print {
+        /* Стили для печати */
+        body {
+            margin: 0;
+            padding: 20px;
+        }
+    
+        header, section, article, footer {
+            border: none;
+            margin-bottom: 0;
+        }
+    
+        h1, h2 {
+            color: #000;
+        }
+    }</style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Мое веб-дизайн портфолио</h1>
+        <p>Привет! Я начинающий веб-дизайнер, который учится создавать креативные и функциональные веб-сайты.</p>
+    </header>
+
+    <section>
+        <h2>Мой опыт и навыки</h2>
+        <p>Здесь вы найдете информацию о моем опыте и навыках в веб-дизайне.</p>
+        <!-- Добавьте дополнительные пункты по мере необходимости -->
+        <ul>
+            <li>Дизайн пользовательского интерфейса (UI)</li>
+            <li>Верстка с использованием HTML и CSS</li>
+            <li>Оптимизация под мобильные устройства</li>
+            <li>Использование инструментов дизайна, таких как Adobe Creative Suite</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Отзывы</h2>
+        <div class="card">
+            <!-- Карточка с отзывом 1 -->
+            <article>
+                <img src="person-people-portrait-facial-expression-hairstyle-smile-emotion-portrait-photography-134689.jpg" alt="Фото клиента 1">
+                <p><strong>Иван Иванов</strong></p>
+                <blockquote>"Замечательный дизайнер! Работал с ним над несколькими проектами, и результат всегда превзошел ожидания!"</blockquote>
+            </article>
+
+            <!-- Карточка с отзывом 2 -->
+            <article>
+                <img src="123123.jpg" alt="Фото клиента 2">
+                <p><strong>Анна Смирнова</strong></p>
+                <blockquote>"Профессионализм, креатив и внимание к деталям — вот что делает этого дизайнера уникальным. Рекомендую!"</blockquote>
+            </article>
+
+            <!-- Добавьте дополнительные карточки с отзывами по мере необходимости -->
+        </div>
+    </section>
+
+    <section>
+        <h2>Как нас найти</h2>
+        <p>Вы можете связаться со мной по следующим контактам:</p>
+        <address>
+            Email: <a href="mailto:misa1910@list.ru">misa1910@list.ru</a><br>
+            Телефон: +7 (950) 068-7138
+        </address>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Портфолио. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
